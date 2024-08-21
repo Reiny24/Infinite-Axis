@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpage Template</title>
+    <title>Infinite Axis</title>
+    <meta name="description" content="">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,15 +17,31 @@
         </div>
 
         <ul class="sidebar">
-            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li onclick="hideSidebar()">
+                <a aria-label="Sidebar with navigation for phones">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a>
+            </li>
+            <li>
+                <a href="#home" aria-label="Home page link">Home</a>
+            </li>
+            <li>
+                <a href="#services" aria-label="Services list link">Services</a>
+            </li>
+            <li>
+                <a href="#contact-us.html" aria-label="Contact us page link">Contact Us</a>
+            </li>
         </ul>
         <ul>
-            <li class="hideOnMobile"><a href="#home">Home</a></li>
-            <li class="hideOnMobile"><a href="#services">Services</a></li>
-            <li class="hideOnMobile"><a href="#contact">Contact Us</a></li>
+            <li class="hideOnMobile">
+                <a href="#home" aria-label="Home page link">Home</a>
+            </li>
+            <li class="hideOnMobile">
+                <a href="#services" aria-label="Services list link">Services</a>
+            </li>
+            <li class="hideOnMobile">
+                <a href="#contact" aria-label="Contact us page link">Contact Us</a>
+            </li>
         </ul>
 
         <input type="checkbox" class="checkbox" id="checkbox">
@@ -44,26 +61,95 @@
             <img src="assets/ua.png" alt="Ukrainian">
         </label>
 
-        <li class="menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-
+        <li class="menuButton" onclick=showSidebar()>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </a>
+        </li>
     </nav>
-
-
-        
-
 
     <!-- Main Section -->
     <main>
         <div class="moto-container">
-            <div class="rect1 item"></div>
-            <h1 class="item">Infinite Axis: Your Bridge to Secure Cloud Solutions!</h1>
-            <div class="line"></div>
-            <h2 class="item">Maximize your business’s potential with our tailored IT solutions. At Infinite Axis, we recognize that every business is unique, and we customize our services to fit your specific needs. From cloud solutions to cybersecurity, our expertise drives your success.</h2>
-            <img class="item" src="assets/image 4.png" alt="">
-            <div class="item rect2"></div>
-            <div class="item rect3"></div>
+            <div class="rect1"></div>
+            <h1>Infinite Axis: Your Bridge to Secure Cloud Solutions!</h1>
+            <hr>
+            <p>Maximize your business’s potential with our tailored IT solutions. At Infinite Axis, we recognize that every business is unique, and we customize our services to fit your specific needs. From cloud solutions to cybersecurity, our expertise drives your success.</p>
+            <img src="assets/image 4.png" alt="">
+            <div class="rect2"></div>
+            <div class="rect3"></div>
         </div>
 
+        <div class="manage-it">
+            <img src="assets/image 5.png" alt="">
+            <h2>Manage IT Service</h2>
+            <p>Empower your business with cutting-edge IT solutions. Tailored tech services for the modern era.</p>
+
+            <div>
+                <h3>Infrastructure Services</h3>
+
+                <ul>
+                    <li>Data center services</li>
+                    <li>Cloud services (IaaS – Infrastructure as a Service)</li>
+                    <li>Networking services</li>
+                    <li>Disaster recovery services</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Software Services</h3>
+                <ul>
+                    <li>Software as a Service (SaaS)</li>
+                    <li>Custom software development</li>
+                    <li>Database services</li>
+                </ul>    
+            </div>
+
+            <div>
+                <h3>Managed IT Services</h3>
+                <ul>
+                    <li>Managed network services</li>
+                    <li>Managed print services</li>
+                    <li>IT service desk</li>
+                </ul>    
+            </div>
+
+            <div>
+                <h3>Security Services</h3>
+                <ul>
+                    <li>Software as a Service (SaaS)</li>
+                    <li>Custom software development</li>
+                    <li>Database services</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Communications Services:</h3>
+                <ul>
+                    <li>Software as a Service (SaaS)</li>
+                    <li>Custom software development</li>
+                    <li>Database services</li>
+                </ul>    
+            </div>
+
+            <div>
+                <h3>Data & Analytics Services</h3>
+                <ul>
+                    <li>Managed network services</li>
+                    <li>Managed print services</li>
+                    <li>IT service desk</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Consultancy & Support Services</h3>
+                <ul>
+                    <li>Software as a Service (SaaS)</li>
+                    <li>Custom software development</li>
+                    <li>Database services</li>
+                </ul>
+            </div>
+        </div>
         
         <div id="services">
             <h2>Infinite Axis is:</h2>
@@ -85,11 +171,14 @@
         </div>
     </main>
 
-
-    <!-- Footer Section -->
-
+    <footer>
+        <div class="logo" >
+            <img src="assets/logo.png" alt="Logo">
+            <p>INFINITE AXIS</p>
+        </div>
+        <p>© 2024 INFINITE AXIS, Inc. All Rights Reserved</p>
+    </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
