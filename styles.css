@@ -19,6 +19,7 @@
 body {
     font-family: Arial;
     transition: background-color 0.5s, color 0.5s;
+    min-width: 400px;
 
     background: var(--light-theme);
     a, .logo, .lang, .moto-container {
@@ -40,13 +41,13 @@ nav {
     align-items: center;
     font-size: 20px;
     font-weight: bold;
-    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.3);
+    min-height: 8vh;
 
     ul {
         width: 100%;
         list-style: none;
         display: flex;
-        justify-content: center;
         align-items: center;
     }
 
@@ -359,6 +360,85 @@ footer {
     }
 }
 
+.contact-us {
+    background: none;
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+        padding: 20px 7vw 0 7vw;
+    }
+    form {
+        justify-self: start;
+        margin: 5vh 0;
+        display: grid;
+
+        input {
+            border: solid 2px var(--color1);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 1vh 1vw;
+            cursor: pointer;
+            transition: border-color 0.3s;
+            font-size: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        input:hover {
+            border-color: var(--color3);
+        }
+
+        div:nth-child(3), div:nth-child(4) {
+            grid-column: span 2;
+            display: grid;
+        }
+
+        #notes {
+            grid-column: span 2;
+        }
+
+        button {
+            background-color: var(--color1);
+            color: var(--light-theme);
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+            margin: 10px 8vw;
+            min-width: 200px;
+            grid-column: span 2;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--color3);
+        }
+
+        .input-control.error input {
+            border-color: #ff3860;
+        }
+
+        .input-control div {
+            height: 15px;
+        }
+
+        .input-control .error {
+            color: #ff3860;
+            text-align: center;
+        }
+
+        .input-control.success input {
+            border-color: #09c372;
+        }
+    }
+}
+
 body.dark {
     background-color: var(--dark-theme);
     a, .logo, .lang, .moto-container {
@@ -394,7 +474,16 @@ body.dark {
     .manage-it {
         color: var(--light-theme);
     }
+
+    .contact-us {
+        color: var(--light-theme);
+        input {
+            background-color: var(--dark-theme);
+            color: var(--light-theme);
+        }
+    }
 }
+
 
 @media(max-width: 800px) {
     .hideOnMobile {
@@ -481,6 +570,13 @@ body.dark {
         > p {
             font-size: 2vh;
         }
+    }
+
+    .contact-us {
+        form {
+            display: flex;
+            flex-direction: column;
+        };
     }
 }
 
