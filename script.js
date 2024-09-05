@@ -8,21 +8,38 @@ function hideSidebar() {
     sidebar.style.display = 'none'
 }
 
+function showLang() {
+    const lang = document.querySelector('.lang-switcher')
+    lang.style.display = 'flex'
+}
+
+function hideLang() {
+    const lang = document.querySelector('.lang-switcher')
+    lang.style.display = 'none'
+}
+
+function changeLang() {
+    const lang = document.querySelector('.lang-switcher')
+    lang.style.display = 'none'
+}
+
+const translations = {
+    en: {
+
+    },
+    ua: {
+
+    },
+    it: {
+
+    }
+}
+
 // Theme Switcher
 const checkbox = document.getElementById("checkbox")
 checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
-
-function toggleLanguage() {
-    const currentLanguage = document.documentElement.lang === 'en' ? 'ua' : 'en';
-    document.documentElement.lang = currentLanguage;
-    document.getElementById('motto').textContent = translations[currentLanguage].motto;
-    document.getElementById('description').textContent = translations[currentLanguage].description;
-    document.getElementById('service1').textContent = translations[currentLanguage].service1;
-    document.getElementById('service2').textContent = translations[currentLanguage].service2;
-    document.getElementById('service3').textContent = translations[currentLanguage].service3;
-}
 
 // Contact us page
 
@@ -146,3 +163,4 @@ const validateInputs = () => {
         inputControl.classList.remove('success')
     }
 }
+

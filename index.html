@@ -46,19 +46,28 @@
 
         <input type="checkbox" class="checkbox" id="checkbox">
         <label for="checkbox" class="checkbox-label">
-            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="22px" fill="#e8eaed"><path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T464-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T160-484q0 135 94.5 229.5T484-160Zm-20-305Z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="22px" fill="#e8eaed"><path d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-252q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm0-200Zm0 340 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#e8eaed"><path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T464-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T160-484q0 135 94.5 229.5T484-160Zm-20-305Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#e8eaed"><path d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-252q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm0-200Zm0 340 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z"/></svg>
             <span class="ball"></span>
         </label>
 
-        <label for="" class="lang en-lang">
-            <span class="language-switcher" onclick="toggleLanguage()">EN</span>
+        <label for="" class="lang-menu" onclick="showLang()">
+            <span>EN</span>
             <img src="assets/eng.png" alt="English">
-        </label>
-
-        <label for="" class="lang ua-lang">
-            <span class="language-switcher" onclick="toggleLanguage()">UA</span>
-            <img src="assets/ua.png" alt="Ukrainian">
+            <ul class="lang-switcher">
+                <li onclick="changeLang('en')">
+                    <span>English</span>
+                    <img src="assets/eng.png" alt="English">
+                </li>
+                <li onclick="changeLang('ua')">
+                    <span>Українська</span>
+                    <img src="assets/ua.png" alt="English">
+                </li>
+                <li onclick="changeLang('it')">
+                    <span>Italiano</span>
+                    <img src="assets/itl.png" alt="English">
+                </li>
+            </ul>
         </label>
 
         <li class="menuButton" onclick=showSidebar()>
@@ -69,7 +78,8 @@
     </nav>
 
     <!-- Main Section -->
-    <main onclick="hideSidebar()">
+    <main onclick="hideSidebar(), hideLang()">
+        <div class="blank"></div>
         <div class="moto-container">
             <div class="rect1"></div>
             <h1>Infinite Axis: Your Bridge to Secure Cloud Solutions!</h1>
