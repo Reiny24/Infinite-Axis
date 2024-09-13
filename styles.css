@@ -278,16 +278,16 @@ nav {
 
 
 .manage-it {
-    height: 100vh;
     display: grid;
     padding: 3vh 4vw;
     gap: 1vh 3vw;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 2fr;
     font-size: 1.5vw;
     align-items: center;
     justify-content: center;
     color: var(--color1);
+    padding-top: 10vh;
 
     img {
         grid-row: span 3;
@@ -327,7 +327,7 @@ nav {
     flex-wrap: wrap;
     gap: 3vh 4vw;
     padding: 40px 0;
-    margin: 18vh 15px 12vh 10px;
+    margin: 5vh 15px 12vh 10px;
     color: var(--color1);
 
     div {
@@ -389,7 +389,7 @@ footer {
 
 .contact-us {
     background: none;
-    min-height: 92vh;
+    min-height: 92.1vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -397,11 +397,17 @@ footer {
 
     h1 {
         text-align: center;
-        padding: 20px 7vw 0 7vw;
+        padding: 20px 7vw 20px 7vw;
     }
+
+    p {
+        font-size: 20px;
+        /* padding: 10px 20px 0 20px; */
+    }
+
     form {
         justify-self: start;
-        margin: 5vh 0;
+        margin: 3vh 0;
         display: grid;
 
         input {
@@ -538,11 +544,11 @@ body.dark {
     }
 
     .manage-it {
-        height: 100vh;
-        grid-template-columns: auto;
+        height: 90vh;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         font-size: 1.8vh;
-        padding: 3vh 6vw;
+        padding: 10vh 6vw;
         gap: 0 5vw;
 
         img {
@@ -573,6 +579,10 @@ body.dark {
                 height: 5vh;
                 padding: 5px;
             }
+        }
+
+        div:nth-child(7) {
+            grid-column: span 2;   
         }
     }
 

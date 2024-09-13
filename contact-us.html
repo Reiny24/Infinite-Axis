@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us | Infinite Axis - Secure Cloud Solutions & IT Services</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Contact Infinite Axis today for secure cloud solutions, managed IT services, and expert IT consultancy. Leave your details and we'll get back to you.">
+    <meta name="keywords" content="Contact Infinite Axis, Cloud Solutions Contact, IT Services Contact, Secure Cloud Solutions, Managed IT Services, Business IT Consultancy">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags for Social Media Sharing -->
+    <meta property="og:title" content="Contact Infinite Axis | Secure Cloud Solutions & IT Services">
+    <meta property="og:description" content="Get in touch with Infinite Axis for tailored IT solutions. Leave your contact information, and we'll be in touch!">
+    <meta property="og:image" content="assets/logo.png">
+    <meta property="og:url" content="https://yourwebsite.com/contact-us">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="assets/favicon.png" type="image/favicon">    
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <nav>
-        <div class="logo" >
-            <img src="assets/logo.png" alt="Logo">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Infinite Axis Logo">
             <p>INFINITE AXIS</p>
         </div>
 
@@ -23,7 +38,7 @@
                 <a href="index.html" aria-label="Home page link">Home</a>
             </li>
             <li>
-                <a href="#services" aria-label="Services list link">Services</a>
+                <a href="index.html#manage-it" aria-label="Services list link">Services</a>
             </li>
             <li>
                 <a href="contact-us.html" aria-label="Contact us page link">Contact Us</a>
@@ -34,7 +49,7 @@
                 <a href="index.html" aria-label="Home page link">Home</a>
             </li>
             <li class="hideOnMobile">
-                <a href="#services" aria-label="Services list link">Services</a>
+                <a href="index.html#manage-it" aria-label="Services list link">Services</a>
             </li>
             <li class="hideOnMobile">
                 <a href="contact-us.html" aria-label="Contact us page link">Contact Us</a>
@@ -58,11 +73,11 @@
                 </li>
                 <li onclick="changeLang('ua')">
                     <span>Українська</span>
-                    <img src="assets/ua.png" alt="English">
+                    <img src="assets/ua.png" alt="Ukrainian">
                 </li>
                 <li onclick="changeLang('it')">
                     <span>Italiano</span>
-                    <img src="assets/itl.png" alt="English">
+                    <img src="assets/itl.png" alt="Italian">
                 </li>
             </ul>
         </label>
@@ -76,37 +91,39 @@
 
     <main class="contact-us" onclick="hideSidebar(), hideLang()">
         <div class="blank2"></div>
-        <h1>Leave your information to contact us</h1>
+        <h1>Contact Infinite Axis</h1>
+        <p>Leave your information and we will</p>
+        <p>contact you as soon as possible!</p>
         <form id="form">
             <div class="input-control">
-                <input type="text" id="firstname" name="First Name" placeholder="First Name">
+                <input type="text" id="firstname" name="First Name" placeholder="First Name" aria-label="Enter your first name">
                 <div class="error"></div>
             </div>
             <div class="input-control">
-                <input type="text" id="lastname" name="Last Name" placeholder="Last Name">
+                <input type="text" id="lastname" name="Last Name" placeholder="Last Name" aria-label="Enter your last name">
                 <div class="error"></div>
             </div>
             <div class="input-control">
-                <input type="text" id="email" name="Email" placeholder="Email">
+                <input type="email" id="email" name="Email" placeholder="Email" aria-label="Enter your email address">
                 <div class="error"></div>
             </div>
             <div class="input-control">
-                <input type="text" id="phone" name="Phone" placeholder="Phone (optional)">
+                <input type="tel" id="phone" name="Phone" placeholder="Phone (optional)" aria-label="Enter your phone number">
                 <div class="error"></div>
             </div>
-            <input type="text" id="notes" name="Notes" placeholder="Notes (optional)">
+            <input type="text" id="notes" name="Notes" placeholder="Notes (optional)" aria-label="Leave any additional notes">
             <button type="submit" id="submit">Submit</button>
         </form>
     </main>
 
     <footer>
-        <div class="logo" >
-            <img src="assets/logo.png" alt="Logo">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Infinite Axis Logo">
             <p>INFINITE AXIS</p>
         </div>
         <p>© 2024 INFINITE AXIS, Inc. All Rights Reserved</p>
     </footer>
-</body>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
